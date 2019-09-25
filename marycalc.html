@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>JS Bin</title>
+</head>
+  
+<script>
+function calculateFunction() {
+    var x = document.getElementById("input1").value;
+    var y = document.getElementById("input2").value;
+    //add them
+    var sum = parseFloat(x) + parseFloat(y);
+    //display them
+    document.getElementById("output1").value = sum;
+}
+
+</script>
+  
+<body>
+  <h1>VetsinTech Web Dev Pre-Work Task</h1>
+
+<p>VetsinTech supports our current and returning veterans
+  with re-integration services, and by connecting them to the 
+  national technology ecosystem. ViT is committed to bringing 
+  together a tech-specific network, resources, and programs for 
+  our veterans interested in Education, Entrepreneurship, and 
+  Employment - the 3E’s!</p>
+  
+  <h1>Simple Calculator</h1>
+  
+  <input type="text" name="input1" id="input1" />
+  +
+  <input type="text" name="input2" id="input2" />
+  
+  
+<input type="submit" name="calculateButton" id="calculateButton" 
+        value="Calculate Now" onclick="calculateFunction()"/>
+  <input type="text" name="output1" id="output1" />
